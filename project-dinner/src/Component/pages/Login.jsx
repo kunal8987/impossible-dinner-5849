@@ -1,8 +1,14 @@
 import { Container } from "@chakra-ui/react";
 import React from "react";
+// import { useContext, useState } from "react";
 import Navbar from "../Navbar";
-
+import { useNavigate } from "react-router-dom";
+// import { AuthContext } from "../AuthContext";
 export default function Login() {
+  const history = useNavigate()
+  const handleSubmit = () => {
+    history('/h')
+  };
   return (
     <>
     <Navbar/>
@@ -11,13 +17,13 @@ export default function Login() {
       <Container className="shadow p-3 mb-5 bg-body rounded mt-5">
       
         <p className="h1 p-3">Login</p>
-        <form className="p-3">
+        <form className="p-3" onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
           </label>
           <input
-            type="email"
+            type="email" 
             className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
@@ -30,7 +36,7 @@ export default function Login() {
           <label htmlFor="exampleInputPassword1" className="form-label">
             Password
           </label>
-          <input
+          <input 
             type="password"
             className="form-control"
             id="exampleInputPassword1"

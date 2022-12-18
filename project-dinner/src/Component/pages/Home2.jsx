@@ -1,21 +1,13 @@
 import React from "react";
 import Footer from "../Footer";
-import Navbar from "../Navbar";
-import {
-  Heading,
-  Input,
-  Stack,
-  IconButton,
-  Container,
-  Box,
-} from "@chakra-ui/react";
-import { SearchIcon } from "@chakra-ui/icons";
-export default function Home() {
+import Nav2 from "../Nav2";
+import { Heading, Container } from "@chakra-ui/react";
+export default function Home2() {
   return (
     <>
       <Container maxW={"80%"}>
         <div>
-          <Navbar />
+          <Nav2 />
 
           <Heading textAlign={"center"} margin={10} as="h2" size="2xl">
             Find your dream job now
@@ -31,7 +23,7 @@ export default function Home() {
             data-bs-ride="carousel"
             position={"inherit"}
           >
-            <h1 class="display-2">Top Companies Hiring Now</h1>
+            <h1 className="display-2">Top Companies Hiring Now</h1>
             <br />
             <div className="carousel-inner">
               <div className="carousel-item active">
@@ -87,73 +79,53 @@ export default function Home() {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
+          <br />
           {/* secound crousale  */}
+          <h1 className="display-2">Featured Companies Actively Hiring</h1>
           <br />
           <div
-            id="carouselExampleControls"
+            id="carouselExampleInterval"
             className="carousel slide"
             data-bs-ride="carousel"
-            position={"inherit"}
           >
-            <h1 class="display-2">Featured Companies Actively Hiring</h1>
-            <br />
             <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img position={"inherit"}
-                  src="https://www.equitybulls.com/equitybullsadmin/uploads/WIPRO%20Limited%202.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                />
+              <div className="carousel-item active" data-bs-interval="10000">
+                <img src="https://www.equitybulls.com/equitybullsadmin/uploads/WIPRO%20Limited%202.jpg" className="d-block w-100" alt="..." />
               </div>
-              <div className="carousel-item">
-                <img position={"inherit"}
-                  src="https://www.xicom.biz/images/socials/xicom-technologies.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div className="carousel-item">
-                <img 
-                  src="https://images.ctfassets.net/8j5aqoy0ts8s/4jySPaEh2mr01RvfkuQoKf/4fe9e1602b683afb023d7a475f19bda1/logo-guideline-2_2x_170912_043411.png"
-                  className="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div className="carousel-item">
-                <img 
-                  src="https://cdn.contactcenterworld.com/images/company/dhl-india-1200px-logo.jpg"
-                  alt="..."
-                />
-              </div>
+              <div className="carousel-item" data-bs-interval="2000" />
+              <img src="https://www.xicom.biz/images/socials/xicom-technologies.jpg" className="d-block w-100" alt="..." />
             </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
+            <div className="carousel-item">
+              <img src="https://cdn.contactcenterworld.com/images/company/dhl-india-1200px-logo.jpg" className="d-block w-100" alt="..." />
+            </div>
           </div>
-          <br />
-          <Footer />
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
+        <br />
+        <Footer />
       </Container>
     </>
   );

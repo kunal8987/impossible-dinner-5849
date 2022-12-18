@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Nav.css'
+import "./Nav.css";
 
-const Navbar = () => {
+const Nav2 = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark popay ">
       <div className=" container container-fluid">
-        <Link to="/" className="navbar-brand">
+        <Link to="/h" className="navbar-brand">
           JOB-Finder
         </Link>
         <button
@@ -23,40 +23,23 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item mx-3">
-              <Link to="/" className="nav-link active" aria-current="page">
+              <Link to="/job" className="nav-link active" aria-current="page">
                 Job
               </Link>
             </li>
             <li className="nav-item mx-3">
               <Link
-                to="/"
+                to="/company"
                 className="nav-link active"
                 aria-current="page"
               >
                 Companies
               </Link>
             </li>
-            <li className="nav-item mx-3">
-              <Link
-                to="/"
-                className="nav-link active"
-                aria-current="page"
-              >
-                Services
-              </Link>
-            </li>
           </ul>
           <form className="d-flex">
-            <Link to="/login" className="nav-link active mx-3" aria-current="page">
-              Log-in
-            </Link>
-
-            <Link
-              to="/signup"
-              className="nav-link active mx-3"
-              aria-current="page"
-            >
-              Sign-up
+            <Link to="/" className="nav-link active mx-3" aria-current="page">
+              Log-out
             </Link>
           </form>
         </div>
@@ -65,4 +48,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Nav2;
