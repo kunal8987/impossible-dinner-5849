@@ -30,6 +30,9 @@ COMPANY PAGE:
 ![image](https://user-images.githubusercontent.com/95977696/208616984-1eddfa5d-2e04-422a-9576-4a2557918e1e.png)
 
 
+I use the local json server to show the data on my project
+
+
 
 
 
