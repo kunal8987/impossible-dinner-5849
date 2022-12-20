@@ -1,4 +1,4 @@
-# impossible-dinner-5849
+# JOB Finder
 # SOLO PROJECT
 
 site url: https://curious-pastelito-5d0841.netlify.app/
