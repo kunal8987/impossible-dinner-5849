@@ -7,17 +7,17 @@ Job Finder are a great way to find local, national, and international job opport
 
 USE HARDWARE :
 
-vs-code
-json server
+vs-code,
+json server,
 crome
 
 USE DEPENDANCIES:
 
-chacra ui
-reactjs
-react-dom
-react router don
-axious
+chacra ui,
+reactjs,
+react-dom,
+react router don,
+axious,
 chacra icons
 
 
